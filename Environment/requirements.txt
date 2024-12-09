@@ -6,4 +6,5 @@ mlxtend
 scikit-learn
 scipy
 xgboost
+imbalanced-learn
 
