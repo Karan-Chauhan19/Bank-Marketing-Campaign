@@ -13,7 +13,7 @@ setup(
     author='Karan-Chauhan' ,# author of the package
     author_email='kc879022@gmail.com', # email of the author
     url='https://github.com/Karan-Chauhan19/Bank-Marketing-Campaign.git', # url of the project
-    install_requires=['pandas', 'numpy', 'sklearn', 'matplotlib','seaborn','mlxtend','xgboost'],
+    install_requires=['pandas', 'numpy', 'sklearn', 'matplotlib','seaborn','mlxtend','xgboost','imbalanced-learn'],
     # list of the dependencies required by the package
     classifiers=['Programming Language :: python :: 3.12.3']
 )
