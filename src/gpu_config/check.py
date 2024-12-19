@@ -23,7 +23,7 @@ class GPU_Config:
         - (None)
         """
 
-        if torch.cuda.is_available(): # This function check GPU is avilable or not if present then it return True else False
+        if torch.cuda.is_available(): # This function check GPU is available or not if present then it return True else False
            
            num_gpu = torch.cuda.device_count() # get the number of GPU
            print(f"Total number of GPU's available: {num_gpu}") 
