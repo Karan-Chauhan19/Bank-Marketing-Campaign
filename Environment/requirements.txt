@@ -2,9 +2,10 @@ numpy
 pandas
 matplotlib
 seaborn
-mlxtend
 scikit-learn
 scipy
-xgboost
 imbalanced-learn
-
+tensorflow
+keras
+torch
+joblib
