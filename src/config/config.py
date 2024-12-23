@@ -4,8 +4,13 @@ github : @Karan-Chauhan19
 Organization : L.J University
 '''
 
+# import sys
+# sys.path.append('/home/karan-chauhan/WorkStation/Project/Bank-Marketing-Campaign/src')
+
+from gpu_config.check import GPU_Config
+
 # config.py
-from gpu_config.check import *
+# from src.gpu_config.check import GPU_Config
 # Dataset configurations
 DATASET = {
     "path": "/home/karan-chauhan/WorkStation/Project/Bank-Marketing-Campaign/Data/bank.csv",
@@ -20,7 +25,7 @@ DATASET = {
 MODEL = {
     "type": "ANN",
     "layers": 5,
-    "activation": "ReLU",
+    "activation": "relu",
     "dropout_rate": 0.5,
     "input_dim": 38,
     "output_classes": 2,
@@ -28,7 +33,7 @@ MODEL = {
 
 # Training configurations
 TRAINING = {
-    "epochs": 100,
+    "epochs": 500,
     "learning_rate": 0.001,
     "optimizer": "Adam",
     "loss_function": "binary_crossentropy",
@@ -38,7 +43,7 @@ TRAINING = {
 
 # Hardware configurations
 HARDWARE = {
-    "use_gpu": GPU_Config().check_gpu_configration(),
+    "use_gpu": GPU_Config.check_gpu_configration(),
     "device": "cuda:0",
 }
 
@@ -48,6 +53,3 @@ EXPERIMENT = {
     "description": "Understand customer behavior and preferences",
     "seed": 42,
 }
-
-
-
